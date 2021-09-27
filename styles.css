@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    overflow-x: hidden;
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
+
+}
+
+/* PAGE */
+.page{
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    height: 100vh;
+    width: 100vw;
+    background: #D9D9D9;
+    background: #D9D9D9;
+    background: -webkit-linear-gradient(left, #D9D9D9, rgba(255,255,255,0));
+    background: -moz-linear-gradient(left, #D9D9D9, rgba(255,255,255,0));
+    background: linear-gradient(to right, #D9D9D9, rgba(255,255,255,0));
+}
+
+#body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+#mainLogo{
+    transition: .5s;
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#mainLogo:hover{
+    transition: .5s;
+    transform: rotate(5deg);
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+#mainLogo:active{
+    width: 290px;
+    height: auto;
+}
+
+.logoHolder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+}
+
+
+/* nav bar */
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+}
+
+.tab{
+    transition: .4s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px 5px 10px; 
+    height: 100%;
+    color: rgb(255,42,255);
+    font-family: 'Bungee';
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;  /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+@keyframes colorBounce {
+    0%{color: rgb(0,254,254);}
+    50%{color: rgb(253,252,1);}
+}
+
+.tab:hover{
+    transition: .4s;
+    color:rgb(0,254,254);
+}
+
+.tab:active{
+    transition: 0s;
+    color: rgb(253,252,1);
+}
+
+.n:hover{
+    transition: .1s;
+    color: rgb(253,252,1); 
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* MAIN BODY*/
+.mainBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* TIMELINE */
+.timelinePod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px;
+}
+.timelinePod-inline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 570px;
+}
+
+
+.timelineCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255,42,255);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    float: right;
+}
+
+.timelineDesc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border-radius: 10px;
+    height: 25px;
+    background-color: rgb(255,42,255);
+}
+
+.timelineCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 305px;
+    
+}
+
+#timelineBlock{
+    position: absolute;
+    width: 10px;
+    background-color: rgb(255,42,255);
+}
+
+/* KEYS */
+.keyboard{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    background-color: black;
+    width: 60px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.key{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    margin: 2px 0px 2px 0px;
+}
+
+.key:hover{
+    background-color: rgb(207, 207, 207);
+}
+
+.key:active{
+    background-color: rgb(0, 0, 0);
+}
+
+.bkey{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    width: 100%;
+    height: 45px;
+    margin: 2px 0px 2px 0px;
+    color: white;
+}
+
+.bkey:hover{
+    background-color: rgb(207, 207, 207);
+}
+
+.bkey:active{
+    background-color: rgb(122, 122, 122);
+}
+
+.note{
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+/*    background-color:rgb(0,254,254);
+}
+#b8:active{
+    background-color: rgb(253,252,1)
+}
+#n11:active{
+    background-color: rgb(255,42,255);*/
+
+
+#n14:hover{
+    background-color: rgba(255,42,255,0.425);
+}
+#b10:hover{
+    background-color:rgba(0,254,254,0.425);
+}
+#n13:hover{
+    background-color: rgba(253,252,1,0.425);
+
+}
+#b9:hover{
+    background-color: rgba(255,42,255,0.425);;
+}
+#n12:hover{
+    background-color:rgba(0,254,254,0.425);;
+}
+#b8:hover{
+    background-color: rgba(253,252,1,0.425);
+}
+#n11:hover{
+    background-color: rgba(255,42,255,0.425);;
+}
+#n10:hover{
+    background-color:rgba(0,254,254,0.425);;
+}
+#b7:hover{
+    background-color: rgba(253,252,1,0.425);
+}
+#n9:hover{
+    background-color: rgba(255,42,255,0.425);;
+}
+#b6:hover{
+    background-color:rgba(0,254,254,0.425);;
+}
+#n8:hover{
+    background-color: rgba(253,252,1,0.425);
+}
+#n7:hover{
+    background-color: rgba(255,42,255,0.425);;
+}
+#b5:hover{
+    background-color:rgba(0,254,254,0.425);;
+}
+#n6:hover{
+    background-color: rgba(253,252,1,0.425);
+}
+#b4:hover{
+    background-color: rgba(255,42,255,0.425);;
+}
+#n5:hover{
+    background-color:rgba(0,254,254,0.425);;
+}
+#b3:hover{
+    background-color: rgba(253,252,1,0.425);
+}
+#n4:hover{
+    background-color: rgba(255,42,255,0.425);;
+}
+#n3:hover{
+    background-color:rgba(0,254,254,0.425);;
+}
+#b2:hover{
+    background-color: rgba(253,252,1,0.425);
+}
+#n2:hover{
+    background-color: rgba(255,42,255,0.425);;
+}
+#b1:hover{
+    background-color:rgba(0,254,254,0.425);;
+}
+#n1:hover{
+    background-color: rgba(252, 252, 0, 0.425);
+}
+
+
+
+
+
+
+#n14:active{
+    background-color: rgb(255,42,255);
+}
+#b10:active{
+    background-color:rgb(0,254,254);
+}
+#n13:active{
+    background-color: rgb(253,252,1)
+
+}
+#b9:active{
+    background-color: rgb(255,42,255);
+}
+#n12:active{
+    background-color:rgb(0,254,254);
+}
+#b8:active{
+    background-color: rgb(253,252,1)
+}
+#n11:active{
+    background-color: rgb(255,42,255);
+}
+#n10:active{
+    background-color:rgb(0,254,254);
+}
+#b7:active{
+    background-color: rgb(253,252,1)
+}
+#n9:active{
+    background-color: rgb(255,42,255);
+}
+#b6:active{
+    background-color:rgb(0,254,254);
+}
+#n8:active{
+    background-color: rgb(253,252,1)
+}
+#n7:active{
+    background-color: rgb(255,42,255);
+}
+#b5:active{
+    background-color:rgb(0,254,254);
+}
+#n6:active{
+    background-color: rgb(253,252,1)
+}
+#b4:active{
+    background-color: rgb(255,42,255);
+}
+#n5:active{
+    background-color:rgb(0,254,254);
+}
+#b3:active{
+    background-color: rgb(253,252,1)
+}
+#n4:active{
+    background-color: rgb(255,42,255);
+}
+#n3:active{
+    background-color:rgb(0,254,254);
+}
+#b2:active{
+    background-color: rgb(253,252,1)
+}
+#n2:active{
+    background-color: rgb(255,42,255);
+}
+#b1:active{
+    background-color:rgb(0,254,254);
+}
+#n1:active{
+    background-color: rgb(253,252,1)
+}
+
+@keyframes goright {
+    0% {left: 60px; height: 35px; width: 80px; opacity: 1;}
+    100% {left: 105vw; height: 5px; width: 5px; opacity: 0;}
+}
+
+.float-right{
+    position: absolute;
+    width: 80px;
+    height: 35px;
+    left: 60px;
+    background-color: red;
+    animation-name: goright;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+#notesTop{
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    width: 300px;
+    height: auto;
+}
